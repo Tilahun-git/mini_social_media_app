@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Social Media App</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1 class="logo">Mini Social Media App</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+  <div class="container">
+    <div class="profile">
+     <label for="profileImageInput">
+      <img alt="" class="profile-photo" id="profileImagePreview">
+     </label>
+     <input type="file" id="profileImageInput" accept="image/*" />
+     <button id="updateProfileBtn">Update Your Profile</button>
+    </div>
+    <main class="feed">
+      <div class="create-post" onclick="goToCreatePost()">
+        <input type="text" placeholder="What's on your mind?" readonly />
+      </div>
+      <div id="posts-container"></div>
+    </main>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>

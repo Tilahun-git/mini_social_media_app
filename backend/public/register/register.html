@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register | Mini Social App</title>
+  <link rel="stylesheet" href="registerStyle.css" />
+</head>
+<body>
+  <div class="reg-container">
+    <div class="reg-card">
+      <h1 class="site-title">Mini Social Media App</h1>
+      <form id="reg-form">
+        <h2>Create  New Account</h2>
+        <div class="form-row">
+          <input type="text" id="firstName" placeholder="First name" required />
+          <input type="text" id="lastName" placeholder="Last name" required />
+        </div>
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="New password" required />
+        <div class="form-row">
+          <select id="birthDay" required>
+            <option value="">Day</option>
+          </select>
+          <select id="birthMonth" required>
+            <option value="">Month</option>
+          </select>
+          <select id="birthYear" required>
+            <option value="">Year</option>
+          </select>
+        </div>
+        <div class="form-row radio-row">
+          <label><input type="radio" name="gender" value="female" required /> Female</label>
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+        </div>
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+      <p style="font-size: 0.95rem; text-align: center; margin-top: 15px;">
+        Already have an account?
+        <a href="../login/login.html" style="color: #1877f2; text-decoration: none; font-weight: bold;">
+          Sign In
+        </a>
+      </p>
+    </div>
+  </div>
+  <div id="toast"></div>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log In - Mini Social App</title>
+  <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h1 class="site-title">Social Media App</h1>
+      <form autocomplete="off" onsubmit="login(event)">
+        <input id="email" placeholder="Enter your email" autocomplete="off" />
+        <input id="password" type="password" placeholder="Password" autocomplete="off" />
+        <button type="submit" class="login-btn">Log In</button>
+      </form>
+      <hr>
+      <button onclick="location.href='../register/register.html'" class="create-account-btn">Create New Account</button>
+      <div id="toast"></div>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>

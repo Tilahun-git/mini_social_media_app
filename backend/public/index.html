@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Social App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mini Social Media App</h1>
+  <div class="container">
+    <p class="home-subtitle">Connect with friends and the world around you.</p>
+    <div class="home-buttons">
+      <button onclick="location.href='login/login.html'" class="primary-btn">Log In</button>
+      <button onclick="location.href='register/register.html'" class="secondary-btn">Create New Account</button>
+    </div>
+    <hr />
+    <div id="post-section" style="display: none">
+      <textarea id="postContent" placeholder="Share something?"></textarea>
+      <input type="file" id="postImage" />
+      <button onclick="addPost()">Post</button>
+      <button onclick="logout()" class="delete-btn">Logout</button>
+    </div>
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search by username or post content..."
+      oninput="filterPosts()"
+      style="margin-top: 10px; display: none"
+    />
+    <div id="posts"></div>
+  </div>
+  <div id="toast"></div>
+  <script src="../script.js"></script>
+</body>
+</html>

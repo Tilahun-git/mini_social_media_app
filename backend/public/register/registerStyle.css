@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f7f8fc, #e0eafc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.reg-container {
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+}
+.reg-card {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+.reg-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+.site-title {
+  text-align: center;
+  color: #6a1b9a;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+form h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #6a1b9a;
+}
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.radio-row {
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.radio-row label {
+  flex: 1;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.radio-row input {
+  margin-right: 8px;
+}
+.radio-row label:hover {
+  background: #ececec;
+}
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #6a1b9a;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+.signup-btn:hover {
+  background: #4a0072;
+}
