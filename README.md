@@ -1,6 +1,6 @@
 # Mini Social Media App
 
-A simple full-stack social media application where users can register, log in, create posts with images or videos, like, comment, edit, and delete their own posts. Built with Node.js, Express, MongoDB, and vanilla JavaScript
+A simple full-stack social media application where users can register, log in, create posts with images or videos, like, comment, edit, and delete their own posts. Built Frontend of html,css and javascript integrated with Backend of Node.js, Express and MongoDB database.
 
 ## Features
 - User registration and login with password hashing
